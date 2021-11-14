@@ -1,0 +1,22 @@
+create database finaldw;
+use finaldw;
+
+create table catedraticos(
+id int primary key not null,
+nombre varchar(50),
+curso varchar(50)
+);
+
+create table cursos(
+id int primary key not null,
+nombre_curso varchar(50)
+);
+
+select * from cursos
+
+create table reportes(
+id int primary key not null,
+catedraticos_activos int,
+catedraticos_inactivos int,
+catedraticos_reprobrados int
+);
